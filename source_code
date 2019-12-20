@@ -7,7 +7,7 @@ function generateRandom(len) {
   
   for(let i = 0; i < len; i++) {
     randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length));
-    console.log("randomPass en for: ", randomPass);
+    // console.log("randomPass en for: ", randomPass);
   }
   console.log(randomPass)
 }
