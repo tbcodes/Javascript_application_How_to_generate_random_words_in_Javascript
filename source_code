@@ -1,0 +1,22 @@
+// Javascript Programming - TruzzBlogg
+// How to generate random words/passwords using Javascript
+
+function generateRandom(len) {
+  let randomPass = '';
+  let wordChars = 'aeioucmdnrszyx%$€!?#@*-|';
+  
+  for(let i = 0; i < len; i++) {
+    randomPass += wordChars.charAt(Math.floor(Math.random() * wordChars.length));
+    console.log("randomPass en for: ", randomPass);
+  }
+  console.log(randomPass)
+}
+
+generateRandom(8);
+
+
+// Understanding how charAt() method works!
+
+// let wordChars = 'aeioucmdnrszyx%$€!?#@*-|';
+
+// console.log(wordChars.charAt(5));  // output: 'c'
